@@ -81,7 +81,7 @@ const Form = () => {
                 City <span className="text-tertiary">*</span>
               </label>
               <select
-                className="appearance-none border text-[#737373] p-2 focus:outline-none border-[#E6E6E6] w-full"
+                className="appearance-none bg-[#FFF] border text-[#737373] p-2 focus:outline-none border-[#E6E6E6] w-full"
                 id="city"
                 value={formData.city}
                 name="city"
@@ -136,7 +136,7 @@ const Form = () => {
                 Room Type <span className="text-tertiary">*</span>
               </label>
               <select
-                className="appearance-none border text-[#737373] p-2 focus:outline-none border-[#E6E6E6] w-full"
+                className="appearance-none border text-[#737373] bg-[#FFF] p-2 focus:outline-none border-[#E6E6E6] w-full"
                 id="roomType"
                 value={formData.roomType}
                 name="roomType"
