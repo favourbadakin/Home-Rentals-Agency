@@ -110,7 +110,7 @@ const Form = () => {
       text-base
       font-normal
       text-gray-700
-      bg-white bg-clip-padding bg-no-repeat
+      bg-[#FFF] bg-clip-padding bg-no-repeat
       border border-solid border-gray-300
       rounded
       transition
@@ -136,7 +136,7 @@ const Form = () => {
                 Room Type <span className="text-tertiary">*</span>
               </label>
               <select
-                className="border text-[#737373] p-2 focus:outline-none border-[#E6E6E6] w-full"
+                className="appearance-none border text-[#737373] p-2 focus:outline-none border-[#E6E6E6] w-full"
                 id="roomType"
                 value={formData.roomType}
                 name="roomType"
@@ -150,7 +150,7 @@ const Form = () => {
                 <option value="family">Family Room</option>
               </select>
             </div>
-            <div className="">
+            <div>
               <label className="font-semibold" htmlFor="price">
                 Price <span className="text-tertiary">*</span>
               </label>
