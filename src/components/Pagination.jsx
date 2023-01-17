@@ -12,8 +12,8 @@ const Pagination = ({ totalPosts, postPerPage, setCurrentPage, currentPage }) =>
     <div className="grid place-items-center mt-3">
       <div className="montserrat text-xs font-medium w-auto mx-auto h-10 inline-flex px-3 text-[#BDBDBD] text-center mt-4 bg-[#FFF] border rounded">
         <button
-          className={`px-3 border-r ${
-            currentPage === 1 ? "text-[#BDBDBD]" : "text-tertiary border-r-[#BDBDBD]"
+          className={`px-3 ${
+            currentPage === 1 ? "text-[#BDBDBD]" : "text-tertiary"
           } `}
           onClick={() => setCurrentPage(1)}
         >

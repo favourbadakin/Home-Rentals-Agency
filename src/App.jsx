@@ -30,7 +30,7 @@ const App = () => {
       <Header />
       <Minimum />
       <section className="bg-[#E5E5E5] px-4 py-5 md:px-20">
-        <Properties setPostPerPage={setPostPerPage} totalPosts={totalPosts} />
+        <Properties setPostPerPage={setPostPerPage} totalPosts={totalPosts} currentPage={currentPage} />
         <div className="grid justify-items-center gap-y-7 sm:grid-cols-2 sm:justify-items-start lg:grid-cols-3">
           {card}
         </div>

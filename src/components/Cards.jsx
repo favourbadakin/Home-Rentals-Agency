@@ -18,7 +18,7 @@ const Cards = ({ img, roomType, address, price, hashtag, shower, bed, }) => {
               boxShadow: "0px 34.0693px 36.1986px rgba(0, 0, 0, 0.133714)",
             }}
           >
-            <div className="">
+            
               <div className="capitalize pl-6 py-2">
                 <h4 className="font-bold text-sm md:text-base w-60 text-[#000]">
                   {address}
@@ -28,8 +28,8 @@ const Cards = ({ img, roomType, address, price, hashtag, shower, bed, }) => {
                 </h6>
                 <p className="text-[#F4511E] font-bold">${price}/Month</p>
               </div>
-              <div className="ppy-3 hh-14">
               
+            
                 <div className="grid grid-cols-3 place-content-center items-center font-bold">
                   <div className="flex pl-8 items-center border-t py-3 gap-x-1 text-[#E4E4E4]">
                     <i className="text-[#000]">
@@ -52,8 +52,8 @@ const Cards = ({ img, roomType, address, price, hashtag, shower, bed, }) => {
                     
                   </div>
                 </div>
-              </div>
-            </div>
+            
+            
           </div>
         </div>
       </div>

@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Properties = ({ setPostPerPage, totalPosts }) => {
-const [button, setButton] = React.useState(true)
+const Properties = ({ setPostPerPage, totalPosts, currentPage }) => {
+const [viewAll, setViewAll] = React.useState(true)
 
 const any = () => {
-setButton(anything => !anything)
+setViewAll(anything => !anything)
 }
-console.log(setButton)
+
   const handleViewAll = () => {
     setPostPerPage(totalPosts);
   };
@@ -22,13 +22,20 @@ const handleViewLess = () => {
           List Of Properties
         </h2>
 
-        {any ?
-         <button className="hidden sm:btn" onClick={handleViewLess}>View Less Properties</button>
-            :
-        <button className="hidden sm:btn" onClick={handleViewAll}>
-  View All Properties
-</button>     
-        
+        {
+          <>
+            <button className="hidden sm:btn" onClick={handleViewLess}>
+              View Less Properties
+            </button>
+
+            <button
+              className={`${ currentPage != 1 ? "hidden" : "hidden sm:btn"  } `}
+              onClick={handleViewAll}
+             
+            >
+              View All Properties
+            </button>
+          </>
         }
       </div>
       {/* Horizontal lines */}
