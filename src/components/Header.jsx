@@ -54,7 +54,7 @@ const Header = () => {
                 <option value="family">Family Room</option>
               </select>
               <select
-                className="border text-[#737373] text-sm p-2 focus:outline-none border-[#E6E6E6] w-6/12"
+                className="border text-[#737373] text-sm p-2 focus:outline-none border-[#E6E6E6] w-6/12 rounded-none"
                 id="type"
                 name="type"
               >
