@@ -19,7 +19,7 @@ const Minimum = () => {
     borderRadius: "7px",
   };
   return (
-    <section className="text-primary py-6 px-4  md:px-20">
+    <section className="text-primary py-6 px-4 md:px-20">
       <div>
         <h2 className="capitalize font-extrabold text-center sm:text-left text-lg md:text-xl xl:text-2xl">
           minimum living cost takes care of everything
