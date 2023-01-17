@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "../assets/images/unsplash_nEtpvJjnPVo.png";
-import img2 from "../assets/images/image_2.png";
+import img2 from "../assets/images/Image_2.png";
 import img3 from "../assets/images/unsplash_uooMllXe6gE.png";
 import img4 from "../assets/images/unsplash_XdWkFaHI97c.png";
 
