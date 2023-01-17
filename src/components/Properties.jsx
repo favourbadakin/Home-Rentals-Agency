@@ -1,10 +1,19 @@
 import React from 'react'
 
-const Properties = ({ setPostPerPage }) => {
-  
+const Properties = ({ setPostPerPage, totalPosts }) => {
+const [button, setButton] = React.useState(true)
+
+const any = () => {
+setButton(anything => !anything)
+}
+console.log(setButton)
   const handleViewAll = () => {
-    setPostPerPage(6);
+    setPostPerPage(totalPosts);
   };
+ 
+const handleViewLess = () => {
+  setPostPerPage(2)
+}
 
   return (
     <section className="mb-3 lg:mb-5">
@@ -12,9 +21,15 @@ const Properties = ({ setPostPerPage }) => {
         <h2 className="font-extrabold text-center sm:text-left text-lg md:text-xl xl:text-2xl">
           List Of Properties
         </h2>
-        <button className="hidden md:btn" onClick={handleViewAll}>
-          View All Properties
-        </button>
+
+        {any ?
+         <button className="hidden sm:btn" onClick={handleViewLess}>View Less Properties</button>
+            :
+        <button className="hidden sm:btn" onClick={handleViewAll}>
+  View All Properties
+</button>     
+        
+        }
       </div>
       {/* Horizontal lines */}
       <hr

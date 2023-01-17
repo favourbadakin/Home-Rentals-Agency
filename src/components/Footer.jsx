@@ -116,7 +116,12 @@ const Footer = () => {
           Copyright © 2023 Minimumlivingcost. All rights reserved
         </p>
       </div>
-      <p className="text-center poppins my-4">Developed with ❤️ by Favour ⚡</p>
+      <p className="text-center poppins my-4">
+        Developed with ❤️ by <span className="border-b p-[0.2]">
+          <a href='https://twitter.com/codewithfav'> Favour</a>
+        </span>
+        ⚡
+      </p>
     </footer>
   );
 }

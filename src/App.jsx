@@ -18,6 +18,7 @@ const App = () => {
   const lastPostIndex = currentPage * postPerPage;
   const firstPostIndex = lastPostIndex - postPerPage;
   const currentPosts = data.slice(firstPostIndex, lastPostIndex);
+  const totalPosts = data.length;
  
  
 
@@ -29,12 +30,12 @@ const App = () => {
       <Header />
       <Minimum />
       <section className="bg-[#E5E5E5] px-4 py-5 md:px-20">
-        <Properties setPostPerPage={setPostPerPage} />
+        <Properties setPostPerPage={setPostPerPage} totalPosts={totalPosts} />
         <div className="grid justify-items-center gap-y-7 sm:grid-cols-2 sm:justify-items-start lg:grid-cols-3">
           {card}
         </div>
         <Pagination
-          totalPosts={data.length}
+          totalPosts={totalPosts}
           postPerPage={postPerPage}
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}

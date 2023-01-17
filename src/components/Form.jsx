@@ -160,6 +160,7 @@ const Form = () => {
               onChange={handleChange}
               name="description"
               value={formData.description}
+              placeholder='Enter Description'
             ></textarea>
           </div>
           {/* <div> */}
