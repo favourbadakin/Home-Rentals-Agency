@@ -1,13 +1,18 @@
 import React from 'react'
 
-const Properties =() => {
+const Properties = ({ setPostPerPage }) => {
+  
+  const handleViewAll = () => {
+    setPostPerPage(6);
+  };
+
   return (
-    <section className='mb-3 lg:mb-5'>
+    <section className="mb-3 lg:mb-5">
       <div className="flex justify-center sm:justify-between">
         <h2 className="font-extrabold text-center sm:text-left text-lg md:text-xl xl:text-2xl">
           List Of Properties
         </h2>
-        <button className="hidden md:btn" href="/#">
+        <button className="hidden md:btn" onClick={handleViewAll}>
           View All Properties
         </button>
       </div>
@@ -19,10 +24,9 @@ const Properties =() => {
       <hr
         className="w-[20%] mt-2 mx-auto sm:hidden"
         style={{ border: "1px solid #F4511E", borderRadius: "50px" }}
-      />  
-      
+      />
     </section>
   );
-}
+};
 
 export default Properties

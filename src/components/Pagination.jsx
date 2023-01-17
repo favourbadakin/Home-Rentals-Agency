@@ -7,6 +7,7 @@ const Pagination = ({ totalPosts, postPerPage, setCurrentPage, currentPage }) =>
         pages.push(i);
         
     }
+    //console.log(postPerPage)
   return (
     <div className="grid place-items-center mt-3">
       <div className="montserrat text-xs font-medium w-auto mx-auto h-10 inline-flex px-3 text-[#BDBDBD] text-center mt-4 bg-[#FFF] border rounded">
@@ -22,17 +23,18 @@ const Pagination = ({ totalPosts, postPerPage, setCurrentPage, currentPage }) =>
           return (
             <>
               <button
+                style={{
+                  borderLeft: "0.5px solid #BDBDBD"
+                }}
                 className={
                   page === currentPage
                     ? "bg-tertiary text-[#FFF] px-4 py-2 "
-                    : "text-tertiary px-3 bg-[#FFF] "
+                    : "text-tertiary px-3 bg-[#FFF] hover:bg-[#FFE6B3]"
                 }
                 key={index}
                 onClick={() => setCurrentPage(page)}
               >
-                <span>
-                  {page}
-                </span>
+                <span>{page}</span>
               </button>
               {/* <button onClick={() => page === null ? setCurrentPage(currentPage + 1) : setCurrentPage(page)}> */}
               {/* Next */}

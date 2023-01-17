@@ -29,6 +29,6 @@ body {
   @apply text-[#F4511E] md:text-3xl font-black rounded inline-block md:mb-2
   }
   .btn{
-  @apply inline-block text-xs lg:text-sm bg-[#F4511E] px-4 py-3 manrope text-[#FFF] rounded
+  @apply inline-block text-xs lg:text-sm bg-[#F4511E] px-4 py-3 manrope text-[#FFF] rounded hover:bg-[#FF824F] transition
   }
 }

@@ -3,11 +3,10 @@ import { MdOutlineBed } from 'react-icons/md';
 import { GiBathtub } from 'react-icons/gi';
 import { CiHashtag } from 'react-icons/ci';
 
-const Cards = ({ img, roomType, address, price, hashtag, shower, bed }) => {
-  // const [currentPage, setCurrentPage] = useState(1);
-  // const [postPerPage, setPostPerPage] = useState(3);
-  // const lastPostIndex = currentPage * postPerPage;
-  // const firstPostIndex = lastPostIndex - postPerPage;
+const Cards = ({ img, roomType, address, price, hashtag, shower, bed, }) => {
+
+ 
+ 
   return (
     <section>
       <div>
@@ -20,7 +19,9 @@ const Cards = ({ img, roomType, address, price, hashtag, shower, bed }) => {
             }}
           >
             <div className="capitalize pl-6 py-2">
-              <h4 className="font-bold text-sm md:text-base w-60 text-[#000]">{address}</h4>
+              <h4 className="font-bold text-sm md:text-base w-60 text-[#000]">
+                {address}
+              </h4>
               <h6 className="text-[#818181] mt-3 font-normal text-xs">
                 {roomType}
               </h6>
