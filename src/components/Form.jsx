@@ -54,7 +54,7 @@ const Form = () => {
                 Address <span className="text-tertiary">*</span>
               </label>
               <input
-                className="border p-2 foc border-[#E6E6E6] w-full"
+                className="border p-2 border-[#E6E6E6] w-full"
                 id="address"
                 placeholder="Enter Address"
                 name="address"
@@ -81,7 +81,7 @@ const Form = () => {
                 City <span className="text-tertiary">*</span>
               </label>
               <select
-                className=" rounded bg-[#FFF] border text-[#737373] p-2 foc border-[#E6E6E6] w-full"
+                className=" rounded bg-[#FFF] border text-[#737373] p-2 focus:border-[#E6E6E6] w-full"
                 id="city"
                 value={formData.city}
                 name="city"
@@ -101,7 +101,7 @@ const Form = () => {
                 State <span className="text-tertiary">*</span>
               </label>
               <select
-                 className=" rounded bg-[#FFF] border text-[#737373] p-2 foc border-[#E6E6E6] w-full"
+                 className=" rounded bg-[#FFF] border text-[#737373] p-4 border-[#E6E6E6] w-full"
                 id="state"
                 value={formData.state}
                 name="state"
