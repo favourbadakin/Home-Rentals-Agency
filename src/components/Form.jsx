@@ -41,7 +41,7 @@ const Form = () => {
                 Name <span className="text-tertiary">*</span>
               </label>
               <input
-                className="border p-2 focus:outline-none border-[#E6E6E6] w-full"
+                className="border p-2 foc border-[#E6E6E6] w-full"
                 id="name"
                 placeholder="Enter Name"
                 name="name"
@@ -54,7 +54,7 @@ const Form = () => {
                 Address <span className="text-tertiary">*</span>
               </label>
               <input
-                className="border p-2 focus:outline-none border-[#E6E6E6] w-full"
+                className="border p-2 foc border-[#E6E6E6] w-full"
                 id="address"
                 placeholder="Enter Address"
                 name="address"
@@ -68,7 +68,7 @@ const Form = () => {
               </label>
               <input
                 type="number"
-                className="border p-2 focus:outline-none border-[#E6E6E6] w-full"
+                className="border p-2 foc border-[#E6E6E6] w-full"
                 id="unitNumber"
                 placeholder="Enter Unit"
                 name="unitNumber"
@@ -81,7 +81,7 @@ const Form = () => {
                 City <span className="text-tertiary">*</span>
               </label>
               <select
-                className="appearance-none rounded bg-[#FFF] border text-[#737373] p-2 focus:outline-none border-[#E6E6E6] w-full"
+                className=" rounded bg-[#FFF] border text-[#737373] p-2 foc border-[#E6E6E6] w-full"
                 id="city"
                 value={formData.city}
                 name="city"
@@ -101,7 +101,7 @@ const Form = () => {
                 State <span className="text-tertiary">*</span>
               </label>
               <select
-                 className="appearance-none rounded bg-[#FFF] border text-[#737373] p-2 focus:outline-none border-[#E6E6E6] w-full"
+                 className=" rounded bg-[#FFF] border text-[#737373] p-2 foc border-[#E6E6E6] w-full"
                 id="state"
                 value={formData.state}
                 name="state"
@@ -121,7 +121,7 @@ const Form = () => {
                 Room Type <span className="text-tertiary">*</span>
               </label>
               <select
-                className="appearance-none rounded border text-[#737373] bg-[#FFF] p-2 focus:outline-none border-[#E6E6E6] w-full"
+                className=" rounded border text-[#737373] bg-[#FFF] p-2 foc border-[#E6E6E6] w-full"
                 id="roomType"
                 value={formData.roomType}
                 name="roomType"
@@ -141,7 +141,7 @@ const Form = () => {
               </label>
               <input
                 type="number"
-                className="border p-2 focus:outline-none border-[#E6E6E6] w-full"
+                className="border p-2 foc border-[#E6E6E6] w-full"
                 id="price"
                 placeholder="Enter Price"
                 name="price"
@@ -155,7 +155,7 @@ const Form = () => {
               Description <span className="text-tertiary">*</span>
             </label>
             <textarea
-              className="border p-2 focus:outline-none border-[#E6E6E6] w-full h-28 md:h-40"
+              className="border p-2 foc border-[#E6E6E6] w-full h-28 md:h-40"
               id="description"
               onChange={handleChange}
               name="description"

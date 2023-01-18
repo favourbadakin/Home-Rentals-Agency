@@ -52,8 +52,7 @@ const Header = () => {
                 height: "100%",
                 width: "100%",
                 zIndex: "10",
-                borderRadius: "10px"
-            
+                borderRadius: "10px",
               }}
             >
               <TileLayer
@@ -76,7 +75,7 @@ const Header = () => {
                 <option value="family">Family Room</option>
               </select>
               <select
-                className="border text-[#737373] text-sm p-2 focus:outline-none border-[#E6E6E6] w-6/12 rounded-none"
+                className="border text-[#737373] bg-[#FFF] bg-clip-padding cursor-pointer focus:ring-0 text-sm p-2 focus:outline-none border-[#E6E6E6] w-6/12 rounded-none"
                 id="type"
                 name="type"
               >
