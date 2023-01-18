@@ -3,7 +3,7 @@ import person from "../assets/images/person.png";
 
 const Quotes = () => {
   return (
-    <section className="bg-[rgba(244, 81, 30, 0.07)]">
+    <section className="bg-[rgb(255, 195, 133)] grid md:grid-cols-2">
       <div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
@@ -22,7 +22,15 @@ const Quotes = () => {
         </div>
       </div>
       <div>
-        <video src="https://www.youtube.com/watch?v=zhUCxEr_qSU" />
+       
+
+        <video controls width="100%">
+          <source
+            src="https://www.youtube.com/watch?v=zhUCxEr_qSU"
+            type="video/mp4"
+          />
+          Sorry, your browser doesn't support videos.
+        </video>
       </div>
     </section>
   );
