@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../assets/images/logo.png";
 import { HiOutlineSearch } from "react-icons/hi";
-//import map from "../assets/images/maps.png";
 import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
