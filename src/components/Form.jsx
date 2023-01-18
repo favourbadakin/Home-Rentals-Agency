@@ -101,22 +101,7 @@ const Form = () => {
                 State <span className="text-tertiary">*</span>
               </label>
               <select
-                 className="appearance-none bg-[#FFF] border text-[#737373] p-2 focus:outline-none border-[#E6E6E6] w-full"
-                // className="form-select appearance-none
-      // block
-      // w-full
-      // px-3
-      // py-1.5
-      // text-base
-      // font-normal
-      // text-gray-700
-      // bg-[#FFF] bg-clip-padding bg-no-repeat
-      // border border-solid border-gray-300
-      // rounded
-      // transition
-      // ease-in-out
-      // m-0
-      // focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                 className="appearance-none rounded bg-[#FFF] border text-[#737373] p-2 focus:outline-none border-[#E6E6E6] w-full"
                 id="state"
                 value={formData.state}
                 name="state"
@@ -136,7 +121,7 @@ const Form = () => {
                 Room Type <span className="text-tertiary">*</span>
               </label>
               <select
-                className="appearance-none border text-[#737373] bg-[#FFF] p-2 focus:outline-none border-[#E6E6E6] w-full"
+                className="appearance-none rounded border text-[#737373] bg-[#FFF] p-2 focus:outline-none border-[#E6E6E6] w-full"
                 id="roomType"
                 value={formData.roomType}
                 name="roomType"

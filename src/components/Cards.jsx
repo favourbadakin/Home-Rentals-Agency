@@ -37,7 +37,7 @@ const Cards = ({ img, roomType, address, price, hashtag, shower, bed, }) => {
                     </i>
                     <span className="text-[#000]">{bed}</span>
                   </div>
-                  <div className="flex items-center border-x border-t text-[#E4E4E4] px-6 py-3 gap-x-1">
+                  <div className="flex items-center border-x border-t text-[#E4E4E4] px-8 py-3 gap-x-1">
                     <i className="text-[#000]">
                       <GiBathtub />
                     </i>

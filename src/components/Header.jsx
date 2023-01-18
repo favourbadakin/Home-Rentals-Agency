@@ -1,7 +1,10 @@
 import React from "react";
 import logo from "../assets/images/logo.png";
 import { HiOutlineSearch } from 'react-icons/hi'
-import maps from "../assets/images/maps.png";
+//import map from "../assets/images/maps.png";
+import { MapContainer, TileLayer } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+
 
 const Header = () => {
   return (
@@ -40,8 +43,22 @@ const Header = () => {
           </h2>
         </div>
         <div className="w-80 h-80 md:w-72 lg:w-96 md:h-auto">
-          <img src={maps} alt="map" />
-          <div className="bg-[#FFF] p-4 rounded-xl">
+          <div className="w-full h-64 mb-3">
+            <MapContainer
+              center={[51.505, -0.09]}
+              zoom={13}
+              scrollWheelZoom={false}
+              placeholder={<p>Loading...</p>}
+              style={{ height: "100%", width: "100%", zIndex: "10", borderRadius:'10px', marginBottom:'16px' }}
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+            </MapContainer>
+          </div>
+
+          <div className="bg-[#FFF] p-3 md:p-4 rounded-xl">
             <form className="flex">
               <select
                 className="border rounded-bl rounded-tl text-[#737373] text-sm p-2 focus:outline-none border-[#E6E6E6] w-4/12"
