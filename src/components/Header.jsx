@@ -66,7 +66,7 @@ const Header = () => {
           <div className="bg-[#FFF] p-3 md:p-4 rounded-xl">
             <form className="flex">
               <select
-                className="border rounded-bl rounded-tl text-[#737373] text-sm p-2 focus:outline-none border-[#E6E6E6] w-4/12"
+                className="border bg-[#FFF] bg-clip-padding cursor-pointer focus:ring-0 rounded-bl rounded-tl text-[#737373] text-sm p-2 focus:outline-none border-[#E6E6E6] w-4/12"
                 id="type"
                 name="type"
               >
