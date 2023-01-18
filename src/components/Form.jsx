@@ -101,7 +101,8 @@ const Form = () => {
                 State <span className="text-tertiary">*</span>
               </label>
               <select
-                 className=" rounded bg-[#FFF] border text-[#737373] p-4 border-[#E6E6E6] w-full"
+                 //className=" rounded bg-[#FFF] border text-[#737373] p-4 border-[#E6E6E6] w-full"
+                 className="border text-[#737373] bg-[#FFF] bg-clip-padding cursor-pointer focus:ring-0 text-sm p-3 focus:outline-none border-[#E6E6E6] w-full rounded-none"
                 id="state"
                 value={formData.state}
                 name="state"
