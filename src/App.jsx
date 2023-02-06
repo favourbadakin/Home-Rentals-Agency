@@ -12,7 +12,7 @@ import data from "./assets/data/data";
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [postPerPage, setPostPerPage] = useState(2);
+  const [postPerPage, setPostPerPage] = useState(6);
 
 
   const lastPostIndex = currentPage * postPerPage;
@@ -44,6 +44,7 @@ const App = () => {
       <Flexibility />
       <Form />
       <Quotes />
+      
       <Footer />
     </>
   );

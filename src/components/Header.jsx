@@ -5,6 +5,9 @@ import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
 const Header = () => {
+
+  const isActive = "pb-[1.09rem] border-b-[2px]";
+  const isNotActive = 'pb-[1.09rem] hover:border-b-[2px] transition';
   return (
     <header className="bg-hero-image bg-no-repeat bg-cover h-screen pb-14 sm:h-auto lg:h-screen">
       <nav className="flex space-x-72 items-end py-3 border-b border-[rgba(255,255,255,.5)] w-4/5 mx-auto md:py-4">
@@ -13,16 +16,24 @@ const Header = () => {
         </div>
         <ul className="dmsans text-[#FFF] font-medium space-x-12 hidden items-center lg:flex">
           <li>
-            <a href="/#">Home</a>
+            <a className={isActive} href="/#">
+              Home
+            </a>
           </li>
           <li>
-            <a href="/#">Landlord</a>
+            <a className={isNotActive} href="/#">
+              Landlord
+            </a>
           </li>
           <li>
-            <a href="/#">Tenants</a>
+            <a className={isNotActive} href="/#">
+              Tenants
+            </a>
           </li>
           <li>
-            <a href="/#">Contact Us</a>
+            <a className={isNotActive} href="/#">
+              Contact Us
+            </a>
           </li>
         </ul>
         <div className="hidden text-[#FFF]">

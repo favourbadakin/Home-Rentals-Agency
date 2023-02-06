@@ -8,11 +8,11 @@ setViewAll(anything => !anything)
 }
 
   const handleViewAll = () => {
-    setPostPerPage(totalPosts);
+    setPostPerPage(18);
   };
  
 const handleViewLess = () => {
-  setPostPerPage(2)
+  setPostPerPage(6)
 }
 
   return (

@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer className="pt-6 pb-18 text-[#0A142F] text-sm px-4 lg:text-base md:px-20">
       <div className="flex flex-col assistant justify-between lg:w-3/4 mx-auto md:flex-row">
-        <div className="bg-[#000] opacity-30 w-48 mx-auto p-5 rounded-xl">
+        <div className="bg-tertiary opacity-90 w-48 mx-auto p-5 rounded-xl">
           <img src={logo} alt="logo" />
         </div>
         <div>

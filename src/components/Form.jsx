@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Drag from './Drag';
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -162,6 +163,10 @@ const Form = () => {
               value={formData.description}
               placeholder="Enter Description"
             ></textarea>
+          </div>
+          <div className="w-[90%] mx-auto mb-12">
+            <p className="font-semibold mb-1">Upload Photos</p>
+            <Drag />
           </div>
           {/* <div> */}
           {/* <label className="font-semibold">Upload Photos</label> */}
