@@ -168,10 +168,6 @@ const Form = () => {
             <p className="font-semibold mb-1">Upload Photos</p>
             <Drag />
           </div>
-          {/* <div> */}
-          {/* <label className="font-semibold">Upload Photos</label> */}
-          {/* <input type='file'></input> 
-          </div>*/}
           <div className="grid place-items-center">
             <button className="btn">Add New Property</button>
           </div>
