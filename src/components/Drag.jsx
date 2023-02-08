@@ -1,7 +1,7 @@
 import React from "React";
 import { useDropzone } from "react-dropzone";
 
-function Drag({ open }) {
+function Drag() {
   const { getRootProps, getInputProps, acceptedFiles } = useDropzone({});
   const files = acceptedFiles.map((file) => (
     <li key={file.path}>
@@ -18,9 +18,9 @@ function Drag({ open }) {
       <input {...getInputProps()} />
       <div className="text-center">
         <p className="font-medium">
-          Drag your images here or
-          <span className="text-tertiary font-semibold cursor-pointer">
-            browse
+          Drag your images here or 
+          <span className="text-tertiary font-semibold cursor-pointer ml-1">
+             browse
           </span>
           <p className="opacity-50">Supported: JPG, JPEG, PNG</p>
         </p>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-//import Drag from './Drag';
+import Drag from './Drag';
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -168,7 +168,7 @@ const Form = () => {
           </form>
           <div className="w-[90%] mx-auto mb-12">
             <p className="font-semibold mb-1">Upload Photos</p>
-            {/* <Drag />  */}
+            <Drag />  
           </div>
           <div className="grid place-items-center">
             <button className="btn">Add New Property</button>
