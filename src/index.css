@@ -34,7 +34,10 @@ body {
   @apply inline-block text-xs lg:text-sm bg-[#F4511E] px-4 py-3 manrope text-[#FFF] rounded hover:bg-[#FF824F] transition
   }
 }
-
+.swiper-pagination{
+position: relative;
+margin-top: 12px;
+}
 .swiper-pagination-bullet-active{
     background-color: #F4511E !important
 }

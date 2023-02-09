@@ -11,12 +11,11 @@ function Drag() {
   return (
     <div
       {...getRootProps({
-        className:
-          "border-dashed border-[1px] md:border-2 border-tertiary rounded py-3",
+        className: "",
       })}
     >
       <input {...getInputProps()} />
-      <div className="text-center">
+      <div className="text-center border-dashed border-[1px] md:border-2 border-tertiary rounded py-3">
         <div className="font-medium">
           Drag your images here or
           <span className="text-tertiary font-semibold cursor-pointer ml-1">

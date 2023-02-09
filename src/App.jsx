@@ -43,7 +43,7 @@ const App = () => {
       </section>
       <Flexibility />
       <Form />
-      <Quotes />
+      <Quotes /> 
       
       <Footer />
     </>
