@@ -2,7 +2,13 @@ import React from "react";
 import { useDropzone } from "react-dropzone";
 
 function Drag() {
-  const { getRootProps, getInputProps, acceptedFiles } = useDropzone({});
+  const { getRootProps, getInputProps, acceptedFiles } = useDropzone({
+    accept: {
+      "image/jpeg": [],
+      "image/jpg": [],
+      "image/png": []
+    }
+  });
   const files = acceptedFiles.map((file) => (
     <li key={file.path}>
       {file.path} - {file.size} bytes
