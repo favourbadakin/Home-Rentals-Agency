@@ -17,17 +17,17 @@ function Drag() {
     >
       <input {...getInputProps()} />
       <div className="text-center">
-        <p className="font-medium">
-          Drag your images here or 
+        <div className="font-medium">
+          Drag your images here or
           <span className="text-tertiary font-semibold cursor-pointer ml-1">
-             browse
+            browse
           </span>
           <p className="opacity-50">Supported: JPG, JPEG, PNG</p>
-        </p>
-        <aside>
-          <ul>{files}</ul>
-        </aside>
+        </div>
       </div>
+      <aside>
+        <ul>{files}</ul>
+      </aside>
     </div>
   );
 }
