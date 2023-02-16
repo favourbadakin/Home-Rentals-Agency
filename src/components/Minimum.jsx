@@ -1,6 +1,6 @@
-import React from 'react';
+import Reac, { useEffect } from 'react';
 import room from "../assets/images/unsplash_oGmf8o53LeE.png";
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import { TbPlant } from 'react-icons/tb';
 import { ImStack } from 'react-icons/im';
 import {
@@ -9,9 +9,38 @@ import {
   RiCommunityLine,
   RiEye2Line,
 } from "react-icons/ri";
+import { useInView } from 'react-intersection-observer';
 
 const Minimum = () => {
 
+  const {ref, inView} = useInView({
+    threshold: 0.2
+  });
+  const animation = useAnimation();
+  const anima = useAnimation();
+
+useEffect(() => {
+  //console.log('use effect =', inView)
+  if(inView){
+    animation.start({
+      x: 0, 
+      transition: {
+        type:'spring', duration: 1, bounce: 0.3
+      }
+    });
+    anima.start({
+      x: -0, y:0,
+      transition: {
+        type:'tween', duration: 2, bounce: 0.3
+      } 
+    })
+  }
+if(!inView){
+  animation.start({x: '-100vw'});
+  anima.start({x: '-100vw', y:'-70vh'})
+}
+  
+}, [inView]);
 
   const iconStyle = {
     border: "1px solid #FFFFFF",
@@ -23,7 +52,7 @@ const Minimum = () => {
   return (
     <section
       className="text-primary py-6 px-4 md:px-20"
-      animate={{ x: -10, y: 10 }}
+      ref={ref}
     >
       <div>
         <motion.h2
@@ -44,10 +73,10 @@ const Minimum = () => {
         />
       </div>
       <div className="flex items-center flex-col sm:flex-row xl:gap-x-80">
-        <div className="md:-ml-11">
+        <motion.div className="md:-ml-11" animate={animation}>
           <img src={room} alt="room" />
-        </div>
-        <div className="font-semibold text-xs md:text-base capitalize md:grid grid-cols-3 gap-y-20 md:text-left">
+        </motion.div>
+        <motion.div animate={anima} className="font-semibold text-xs md:text-base capitalize md:grid grid-cols-3 gap-y-20 md:text-left">
           <div className="flex mt-4 md:mt-0 md:flex-col items-center md:items-start space-x-6 md:space-x-0">
             <i className="icn md:mb-2">
               <RiMoneyDollarCircleLine style={iconStyle} />
@@ -89,7 +118,7 @@ const Minimum = () => {
             </i>
             <p className="md:w-28">pay for what you use!</p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
