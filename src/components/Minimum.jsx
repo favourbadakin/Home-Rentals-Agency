@@ -1,5 +1,6 @@
 import React from 'react';
 import room from "../assets/images/unsplash_oGmf8o53LeE.png";
+import { motion } from 'framer-motion';
 import { TbPlant } from 'react-icons/tb';
 import { ImStack } from 'react-icons/im';
 import {
@@ -11,6 +12,7 @@ import {
 
 const Minimum = () => {
 
+
   const iconStyle = {
     border: "1px solid #FFFFFF",
     padding: "8px",
@@ -19,11 +21,18 @@ const Minimum = () => {
     borderRadius: "7px",
   };
   return (
-    <section className="text-primary py-6 px-4 md:px-20">
+    <section
+      className="text-primary py-6 px-4 md:px-20"
+      animate={{ x: -10, y: 10 }}
+    >
       <div>
-        <h2 className="capitalize font-extrabold text-center sm:text-left text-lg md:text-xl xl:text-2xl">
+        <motion.h2
+          className="capitalize font-extrabold text-center sm:text-left text-lg md:text-xl xl:text-2xl"
+          initial={{ opacity: 0, x: "-100vh" }}
+          animate={{ opacity: 1, x: 0 }}
+        >
           minimum living cost takes care of everything
-        </h2>
+        </motion.h2>
         {/* Horizontal lines */}
         <hr
           className="w-56 hidden sm:block"
@@ -34,7 +43,7 @@ const Minimum = () => {
           style={{ border: "1px solid #F4511E", borderRadius: "50px" }}
         />
       </div>
-      <div className="flex items-center flex-col sm:flex-row">
+      <div className="flex items-center flex-col sm:flex-row xl:gap-x-80">
         <div className="md:-ml-11">
           <img src={room} alt="room" />
         </div>

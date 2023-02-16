@@ -24,9 +24,9 @@ const handleViewLess = () => {
 
         {
           <>
-            <button className="hidden sm:btn" onClick={handleViewLess}>
-              View Less Properties
-            </button>
+            {/* <button className="hidden" onClick={handleViewLess}> */}
+              {/* View Less Properties */}
+            {/* </button> */}
 
             <button
               className={`${ currentPage != 1 ? "hidden" : "hidden sm:btn"  } `}

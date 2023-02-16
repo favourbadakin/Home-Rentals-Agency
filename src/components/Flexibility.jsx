@@ -7,7 +7,7 @@ import img4 from "../assets/images/unsplash_XdWkFaHI97c.png";
 const Flexibility = () => {
   return (
     <section className="py-5 px-4 md:px-20">
-      <div className="flex flex-col items-center gap-x-10 md:gap-x-12 lg:gap-x-16 sm:flex-row">
+      <div className="flex flex-col items-center gap-x-10 md:gap-x-12 lg:gap-x-16 sm:flex-row xl:gap-x-72">
         <div className="capitalize text-[#FFF] text-xs md:text-base">
           <div className="flex gap-x-4 items-end">
             <div className="relative">

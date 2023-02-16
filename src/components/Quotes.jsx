@@ -1,6 +1,6 @@
 import React from "react";
-import { Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -36,12 +36,16 @@ const Quotes = () => {
   ];
   const src = "https://www.youtube.com/embed/4Yq5n5DhPLA";
   return (
-     <section className="bg-[#FFF3EF] grid grid-cols-1 md:grid-cols-2 relative">
-    
+    <section className="bg-[#FFF3EF] grid grid-cols-1 md:grid-cols-2 relative">
       <div className="py-5 px-4 md:px-20 order-2 md:order-1 my-auto">
         <Swiper
-          modules={[Pagination]}
+          modules={[Autoplay, Pagination]}
           slidesPerView={1}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
           pagination={{ clickable: true }}
         >
           {quoteData.map((info) => (
@@ -65,7 +69,6 @@ const Quotes = () => {
                   </div>
                 </div>
               </div>
-              
             </SwiperSlide>
           ))}
         </Swiper>

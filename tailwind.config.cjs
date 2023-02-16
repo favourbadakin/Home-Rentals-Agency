@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-image":
-          "linear-gradient(200.44deg, rgba(0, 0, 0, 0.0001) 16.41%, rgba(0, 0, 0, 0.51) 77.16%), url('/src/assets/images/header.png')",
+          "linear-gradient(200.44deg, rgba(0, 0, 0, 0.0001) 16.41%, rgba(0, 0, 0, 0.51) 77.16%), url('/src/assets/images/header.jpg')",
       },
     },
   },

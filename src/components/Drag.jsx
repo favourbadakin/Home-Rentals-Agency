@@ -2,16 +2,30 @@ import React from "react";
 import { useDropzone } from "react-dropzone";
 
 function Drag() {
-  const { getRootProps, getInputProps, acceptedFiles } = useDropzone({
+  const { getRootProps, getInputProps, acceptedFiles, fileRejections } = useDropzone({
     accept: {
-      "image/jpeg": [],
       "image/jpg": [],
+      "image/jpeg": [],
       "image/png": []
     }
   });
-  const files = acceptedFiles.map((file) => (
+  const acceptedFileItems = acceptedFiles.map((file) => (
     <li key={file.path}>
-      {file.path} - {file.size} bytes
+      {file.path} - {Math.round(file.size / 1024)}KB
+    </li>
+    
+    
+    
+  ));
+
+  const rejectedFileItems = fileRejections.map(({ file, errors }) => (
+    <li key={file.path}>
+      {file.path} - {Math.round(file.size / 1024)}KB
+      <ul>
+        {errors.map((e) => (
+          <li key={e.code}>{e.message}</li>
+        ))}
+      </ul>
     </li>
   ));
   return (
@@ -31,7 +45,8 @@ function Drag() {
         </div>
       </div>
       <aside>
-        <ul>{files}</ul>
+        <ul className="text-[#4BB543]">{acceptedFileItems}</ul>
+        <ul className="text-[#ED4337]">{rejectedFileItems}</ul>
       </aside>
     </div>
   );

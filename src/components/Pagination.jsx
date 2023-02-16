@@ -15,9 +15,9 @@ const Pagination = ({ totalPosts, postPerPage, setCurrentPage, currentPage }) =>
           className={`px-3 ${
             currentPage === 1 ? "text-[#BDBDBD]" : "text-tertiary"
           } `}
-          onClick={() => setCurrentPage(1)}
+          onClick={() => setCurrentPage(currentPage - 1)}
         >
-          First
+          Prev
         </button>
         {pages.map((page, index) => {
           return (
@@ -36,9 +36,6 @@ const Pagination = ({ totalPosts, postPerPage, setCurrentPage, currentPage }) =>
               >
                 <span>{page}</span>
               </button>
-              {/* <button onClick={() => page === null ? setCurrentPage(currentPage + 1) : setCurrentPage(page)}> */}
-              {/* Next */}
-              {/* </button> */}
             </>
           );
         })}

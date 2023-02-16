@@ -11,6 +11,7 @@ const Form = () => {
     roomType: "",
     price: "",
     description: "",
+    picture:''
   });
 
   const handleChange = (event) => {
@@ -163,17 +164,16 @@ const Form = () => {
               value={formData.description}
               placeholder="Enter Description"
             ></textarea>
-
           </div>
-          </form>
+
           <div className="w-[90%] mx-auto mb-12">
             <p className="font-semibold mb-1">Upload Photos</p>
-            <Drag />  
+            <Drag />
           </div>
           <div className="grid place-items-center">
             <button className="btn">Add New Property</button>
           </div>
-        
+        </form>
       </div>
     </section>
   );
